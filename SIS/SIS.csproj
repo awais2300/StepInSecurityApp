@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61B00593-1415-4A3F-B703-77EAD23A163F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SIS</RootNamespace>
+    <AssemblyName>SIS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Collection.cs" />
+    <Compile Include="Data\DataAccess.cs" />
+    <Compile Include="Manager\ResidentManager.cs" />
+    <Compile Include="Manager\GuestManager.cs" />
+    <Compile Include="Manager\SecurityManager.cs" />
+    <Compile Include="Manager\StudentManager.cs" />
+    <Compile Include="Manager\VehicleManager.cs" />
+    <Compile Include="Model\BaseModel.cs" />
+    <Compile Include="Model\Resident.cs" />
+    <Compile Include="Model\Guest.cs" />
+    <Compile Include="Model\Rowstate.cs" />
+    <Compile Include="Model\Security.cs" />
+    <Compile Include="Model\Student.cs" />
+    <Compile Include="Manager\EmployeeManager.cs" />
+    <Compile Include="Model\Employee.cs" />
+    <Compile Include="Model\Vehicle.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestSISDataSet.cs">
+      <DependentUpon>TestSISDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TestSISDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestSISDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddPersons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddPersons.Designer.cs">
+      <DependentUpon>AddPersons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResidentDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ResidentDataFrm.Designer.cs">
+      <DependentUpon>ResidentDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VehicleDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VehicleDataFrm.Designer.cs">
+      <DependentUpon>VehicleDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OverNightStayApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OverNightStayApproval.Designer.cs">
+      <DependentUpon>OverNightStayApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CreateUser.Designer.cs">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EmployeeDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EmployeeDataFrm.Designer.cs">
+      <DependentUpon>EmployeeDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EmployeeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EmployeeReport.Designer.cs">
+      <DependentUpon>EmployeeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EntryDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EntryDataFrm.Designer.cs">
+      <DependentUpon>EntryDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GuestDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GuestDataFrm.Designer.cs">
+      <DependentUpon>GuestDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OverNightStayReq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OverNightStayReq.Designer.cs">
+      <DependentUpon>OverNightStayReq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StudentDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StudentDataFrm.Designer.cs">
+      <DependentUpon>StudentDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VehicleDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VehicleDetailFrm.Designer.cs">
+      <DependentUpon>VehicleDetailFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddPersons.resx">
+      <DependentUpon>AddPersons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResidentDataFrm.resx">
+      <DependentUpon>ResidentDataFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VehicleDataFrm.resx">
+      <DependentUpon>VehicleDataFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OverNightStayApproval.resx">
+      <DependentUpon>OverNightStayApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CreateUser.resx">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EmployeeDataFrm.resx">
+      <DependentUpon>EmployeeDataFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EmployeeReport.resx">
+      <DependentUpon>EmployeeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EntryDataFrm.resx">
+      <DependentUpon>EntryDataFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GuestDataFrm.resx">
+      <DependentUpon>GuestDataFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report1.rdlc" />
+    <EmbeddedResource Include="Reports\Report2.rdlc" />
+    <EmbeddedResource Include="Reports\Report3.rdlc" />
+    <EmbeddedResource Include="Reports\Report4.rdlc" />
+    <EmbeddedResource Include="UI\OverNightStayReq.resx">
+      <DependentUpon>OverNightStayReq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report8.rdlc" />
+    <EmbeddedResource Include="Reports\Report6.rdlc" />
+    <EmbeddedResource Include="Reports\Report5.rdlc" />
+    <EmbeddedResource Include="Reports\Report7.rdlc" />
+    <EmbeddedResource Include="Reports\Report9.rdlc" />
+    <EmbeddedResource Include="Reports\Report10.rdlc" />
+    <EmbeddedResource Include="UI\StudentDataFrm.resx">
+      <DependentUpon>StudentDataFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VehicleDetailFrm.resx">
+      <DependentUpon>VehicleDetailFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TestSISDataSet.xsc">
+      <DependentUpon>TestSISDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TestSISDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TestSISDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TestSISDataSet.xss">
+      <DependentUpon>TestSISDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SIS.Data.DataAccess" Collapsed="true">
+    <Position X="5" Y="11.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAQBAAAAAACAAAAAAAAAUAAAAAAAAAAACAgAAAAAAA=</HashCode>
+      <FileName>Data\DataAccess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIS.Manager.EmployeeManager">
+    <Position X="0.5" Y="12.5" Width="2" />
+    <AssociationLine Name="da" Type="SIS.Data.DataAccess" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.444" Y="12.5" />
+        <Point X="1.444" Y="11.824" />
+        <Point X="5" Y="11.824" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IACgAAAEAAKAAAAAAABAAAQAAAYAABAYBAAAAAAAAAA=</HashCode>
+      <FileName>Manager\EmployeeManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="da" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SIS.Manager.GuestManager">
+    <Position X="2.75" Y="12.5" Width="2" />
+    <AssociationLine Name="da" Type="SIS.Data.DataAccess" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.625" Y="12.5" />
+        <Point X="3.625" Y="11.812" />
+        <Point X="5" Y="11.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ACGkCAAAAACAAAAEIAAAAAAAAABAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Manager\GuestManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="da" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SIS.Manager.SecurityManager">
+    <Position X="5" Y="12.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAACCBAEAAAACAAQAAAAAAAEAEwAAoAAABAQAAA=</HashCode>
+      <FileName>Manager\SecurityManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="da" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SIS.Manager.StudentManager">
+    <Position X="7.25" Y="12.5" Width="2" />
+    <AssociationLine Name="da" Type="SIS.Data.DataAccess" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="12.5" />
+        <Point X="8.25" Y="11.75" />
+        <Point X="7" Y="11.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAgAEASCAAAAAAAECAABAAAAAAQAAAAAAAIA=</HashCode>
+      <FileName>Manager\StudentManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="da" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SIS.Manager.VehicleManager">
+    <Position X="9.5" Y="12.5" Width="2.25" />
+    <AssociationLine Name="da" Type="SIS.Data.DataAccess" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.625" Y="12.5" />
+        <Point X="10.625" Y="11.781" />
+        <Point X="7" Y="11.781" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AiAgAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAABAAAg=</HashCode>
+      <FileName>Manager\VehicleManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="da" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SIS.Model.BaseModel" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\BaseModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIS.Model.Employee">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAhAQAAABIAQAAAAAEEAAAACBBIAQgAAABBAAIgAIgA=</HashCode>
+      <FileName>Model\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIS.Model.Guest">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AABASQAABIAAAACAAEEAAAAABBIAIAAAABBAAIgAAgA=</HashCode>
+      <FileName>Model\Guest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIS.Model.Security">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAEAgAAIAE=</HashCode>
+      <FileName>Model\Security.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIS.Model.Student">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AABAQAAABIIAAAAABEEAAAAEBBIAAAAAABBAAIIAAAA=</HashCode>
+      <FileName>Model\Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIS.Model.Vehicle">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>GBAAAgBAAAEIAAAABmAAAAQAAICAAQAAAAgAgAIAAAA=</HashCode>
+      <FileName>Model\Vehicle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIS.UI.EmployeeDataFrm">
+    <Position X="0.5" Y="6.25" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="employeedata" Type="SIS.Model.Employee">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.574" Y="0.195" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AASAJAAAISCQABAAAACAANIDCJHEUJQgAKBBgAJgAQI=</HashCode>
+      <FileName>UI\EmployeeDataFrm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="employeedata" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SIS.UI.EntryDataFrm">
+    <Position X="5" Y="6.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="employeedata" Type="SIS.Model.Employee" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.917" Y="6.25" />
+        <Point X="5.917" Y="5.29" />
+        <Point X="3.708" Y="5.29" Type="JumpStart" />
+        <Point X="3.542" Y="5.29" Type="JumpEnd" />
+        <Point X="2.375" Y="5.29" />
+        <Point X="2.375" Y="3.587" />
+        <Point X="2" Y="3.587" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.753" Y="-1.546" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="guestdata" Type="SIS.Model.Guest" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.917" Y="6.25" />
+        <Point X="5.917" Y="4.328" />
+        <Point X="4.75" Y="4.328" />
+        <Point X="4.75" Y="3.395" />
+        <Point X="4.25" Y="3.395" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.73" Y="-1.319" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="studentdata" Type="SIS.Model.Student" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.917" Y="6.25" />
+        <Point X="5.917" Y="5.29" />
+        <Point X="8" Y="5.29" />
+        <Point X="8" Y="4.848" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.005" Y="0.557" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AASABIABYaCAEBIQAYCQAJMCCBBIUBRoAKABgAJAAQI=</HashCode>
+      <FileName>UI\EntryDataFrm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="employeedata" />
+      <Field Name="guestdata" />
+      <Field Name="studentdata" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SIS.UI.GuestDataFrm">
+    <Position X="3" Y="6.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="guestdata" Type="SIS.Model.Guest">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.02" Y="0.565" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AACAIAABISCQABAAAACAANMDCJFEUJAhAKBBgAJgAQI=</HashCode>
+      <FileName>UI\GuestDataFrm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="guestdata" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SIS.UI.StudentDataFrm">
+    <Position X="7.25" Y="6.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="studentdata" Type="SIS.Model.Student">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.07" Y="0.756" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AACABIAAISGAABAAAgCAAJIHCBBEUFAgAqBBiIJAEwI=</HashCode>
+      <FileName>UI\StudentDataFrm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="studentdata" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SIS.UI.VehicleDetailFrm">
+    <Position X="9.5" Y="6.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="vehicle" Type="SIS.Model.Vehicle">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.764" Y="0.792" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAACACAAgAQAQAAKAAhAAAAQA=</HashCode>
+      <FileName>UI\VehicleDetailFrm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="vehicle" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
